@@ -3,7 +3,7 @@ name: 🚀 Tarea de Despliegue
 on:
    push:
      branches:
-       - main
+       - jorge
 
 jobs:
   deploy:
@@ -17,9 +17,9 @@ jobs:
       - name: 📂 Sincronizando archivos via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ftp-jairoapi.alwaysdata.net # Change if using another host
-          username: jairoapi
-          password: clase1234
+          server: ftp-antonio.alwaysdata.net # Change if using another host
+          username: antonio
+          password: clase16378049
           server-dir: www/ # Replace with your correct path
           protocol: ftps
           timeout: 86400000
