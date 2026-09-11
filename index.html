@@ -1,1 +1,254 @@
-<p>hola equipo soy yeison </p>
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de los Dinosaurios</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eef5e8;
+            color: #263326;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1b5e20, #4caf50);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        nav {
+            background-color: #183d1c;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #8bc34a;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        section h2 {
+            color: #2e7d32;
+            font-size: 30px;
+        }
+
+        .tarjetas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .tarjeta {
+            flex: 1;
+            min-width: 250px;
+            background-color: #f1f8e9;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 6px solid #4caf50;
+        }
+
+        .tarjeta h3 {
+            color: #1b5e20;
+        }
+
+        .dinosaurio {
+            text-align: center;
+            font-size: 80px;
+            margin: 10px;
+        }
+
+        footer {
+            background-color: #183d1c;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        .destacado {
+            background-color: #dcedc8;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🦖 La Historia de los Dinosaurios 🦕</h1>
+        <p>Un viaje por millones de años de historia</p>
+    </header>
+
+    <nav>
+        <a href="#historia">Historia</a>
+        <a href="#periodos">Períodos</a>
+        <a href="#dinosaurios">Dinosaurios</a>
+        <a href="#extincion">Extinción</a>
+    </nav>
+
+    <section id="historia">
+        <h2>🦖 ¿Qué fueron los dinosaurios?</h2>
+
+        <p>
+            Los dinosaurios fueron un grupo de reptiles que vivieron en la Tierra
+            durante millones de años. Aparecieron aproximadamente hace
+            <strong>230 millones de años</strong> y dominaron muchos ecosistemas
+            terrestres durante gran parte de la Era Mesozoica.
+        </p>
+
+        <p>
+            Existieron dinosaurios de diferentes tamaños y formas. Algunos eran
+            pequeños y rápidos, mientras que otros fueron enormes animales
+            herbívoros que alcanzaban varios metros de longitud.
+        </p>
+
+        <div class="destacado">
+            <strong>Dato curioso:</strong> Los dinosaurios vivieron mucho antes
+            de que aparecieran los seres humanos.
+        </div>
+    </section>
+
+    <section id="periodos">
+        <h2>🌎 Los tres grandes períodos</h2>
+
+        <div class="tarjetas">
+
+            <div class="tarjeta">
+                <h3>Triásico</h3>
+                <p>
+                    Comenzó hace aproximadamente 252 millones de años.
+                    Los primeros dinosaurios aparecieron durante este período.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Jurásico</h3>
+                <p>
+                    Durante el Jurásico los dinosaurios se hicieron muy
+                    numerosos y aparecieron especies gigantescas.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Cretácico</h3>
+                <p>
+                    Fue el último período de la Era Mesozoica. Durante esta
+                    época existieron dinosaurios famosos como el
+                    Tyrannosaurus rex.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="dinosaurios">
+        <h2>🦕 Dinosaurios famosos</h2>
+
+        <div class="tarjetas">
+
+            <div class="tarjeta">
+                <div class="dinosaurio">🦖</div>
+                <h3>Tyrannosaurus rex</h3>
+                <p>
+                    Fue un gran dinosaurio carnívoro que vivió durante el
+                    período Cretácico.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <div class="dinosaurio">🦕</div>
+                <h3>Triceratops</h3>
+                <p>
+                    Dinosaurio herbívoro conocido por sus tres cuernos y
+                    su gran escudo óseo.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <div class="dinosaurio">🦕</div>
+                <h3>Brachiosaurus</h3>
+                <p>
+                    Fue un enorme dinosaurio herbívoro con un cuello muy
+                    largo que le permitía alcanzar vegetación elevada.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="extincion">
+        <h2>☄️ La extinción de los dinosaurios</h2>
+
+        <p>
+            Hace aproximadamente <strong>66 millones de años</strong>,
+            ocurrió una extinción masiva que acabó con los dinosaurios
+            no avianos y muchas otras especies.
+        </p>
+
+        <p>
+            Una de las principales explicaciones científicas es el impacto
+            de un gran asteroide en la zona que actualmente corresponde
+            a la península de Yucatán, en México.
+        </p>
+
+        <p>
+            Después de esta extinción, los mamíferos comenzaron a ocupar
+            muchos de los espacios ecológicos que habían quedado libres.
+        </p>
+    </section>
+
+    <section>
+        <h2>🔬 Los dinosaurios y la ciencia</h2>
+
+        <p>
+            Los científicos estudian los fósiles para conocer cómo eran
+            los dinosaurios, qué comían, cómo se movían y cómo vivían.
+        </p>
+
+        <p>
+            Actualmente sabemos que las aves son descendientes de dinosaurios
+            terópodos. Por eso, desde el punto de vista científico,
+            los dinosaurios no desaparecieron completamente.
+        </p>
+    </section>
+
+    <footer>
+        <p>🦖 Página educativa sobre la historia de los dinosaurios</p>
+        <p>Creado con HTML y CSS</p>
+    </footer>
+
+</body>
+</html>
+```
+
